@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interview Question Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Mini Interview Question Generator (LLM Powered)</h2>
+
+<label>Role</label><br>
+<input type="text" id="role" placeholder="e.g. Software Developer">
+
+<br><br>
+
+<label>Difficulty</label><br>
+<select id="difficulty">
+    <option value="Junior">Junior</option>
+    <option value="Mid">Mid</option>
+    <option value="Senior">Senior</option>
+</select>
+
+<br><br>
+
+<button onclick="generateQuestions()">Generate Questions</button>
+<p id="status"></p>
+
+
+<h3>Generated Questions</h3>
+<ul id="questions"></ul>
+
+<button onclick="saveSet()">Save Question Set</button>
+
+<hr>
+
+<h3>My Question Sets</h3>
+<ul id="savedSets"></ul>
+
+<button onclick="exportCSV()">Export Last Set (CSV)</button>
+
+<script src="script.js"></script>
+</body>
+</html>
